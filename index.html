@@ -2,9 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pizzeria</title>
+    <link href ="style.css" rel = "stylesheet" type = "text/css"/>
 </head>
 <body>
-
+<div class="container">
+    <div class = "content">
+        <h1>Mangione's Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class = "row">
+                    <div>
+                        <label for = "firstname">First</label>
+                        <input id = "firstname" name = "first_name" type = "text">
+                    </div>
+                    <div>
+                        <label for = "lastname">Last</label>
+                        <input id = "lastname" name = "last_name" type = "text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class = "row">
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type = "radio" id = "small" name = "size">
+                        <label for = "small">Small</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "medium" name = "size">
+                        <label for = "medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "large" name = "size">
+                        <label for = "large">Large</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "xlarge" name = "size">
+                        <label for = "xlarge">X-Large</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Crust:</legend>
+                    <div>
+                    <input type = "radio" id = "regular" name = "crust">
+                    <label for = "regular">Regular Crust</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "thin" name = "crust">
+                        <label for = "thin">Thin Crust</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "stuffed" name = "crust">
+                        <label for = "stuffed">Stuffed Crust</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type = "checkbox" id = "peperoni" name = "peperoni" value = "peperoni">
+                        <label for = "peperoni">Peperoni</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" id = "chicken" name = "chicken" value = "chicken">
+                        <label for = "chicken">Chicken</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "peppers" name = "peppers" value = "peppers">
+                        <label for = "peppers">Green Peppers</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "ham" name = "ham" value = "ham">
+                        <label for = "ham">Ham</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "bacon" name = "bacon" value = "bacon">
+                        <label for = "bacon">Bacon</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "mushrooms" name = "mushrooms" value = "mushrooms">
+                        <label for = "mushrooms">Mushrooms</label>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Address:</legend>
+                <label for = "Address">Address</label>
+                <textarea id = "Address" name = "Address" rows = "4" cols = "10"
+                          placeholder = "ex. 123 ABC Street, Zipcode" style="width: 408px; height: 92px;"></textarea>
+            </fieldset>
+            <button type = "button" onclick = "alert('Your pizza will be a ready in 15 minutes!')">Submit Order</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
