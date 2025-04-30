@@ -58,8 +58,11 @@
                         <label for = "stuffed">Stuffed Crust</label>
                     </div>
                 </fieldset>
+
+            </div>
+            <div class = "row">
                 <fieldset>
-                    <legend>Toppings:</legend>
+                    <legend>Left Toppings:</legend>
                     <div>
                         <input type = "checkbox" id = "peperoni" name = "peperoni" value = "peperoni">
                         <label for = "peperoni">Peperoni</label>
@@ -85,10 +88,44 @@
                         <label for = "mushrooms">Mushrooms</label>
                     </div>
                 </fieldset>
+                <fieldset>
+                    <legend>Right Toppings:</legend>
+                    <div>
+                        <input type = "checkbox" id = "peperoniR" name = "peperoni" value = "peperoni">
+                        <label for = "peperoniR">Peperoni</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" id = "chickenR" name = "chicken" value = "chicken">
+                        <label for = "chickenR">Chicken</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "peppersR" name = "peppers" value = "peppers">
+                        <label for = "peppersR">Green Peppers</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "hamR" name = "ham" value = "ham">
+                        <label for = "hamR">Ham</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "baconR" name = "bacon" value = "bacon">
+                        <label for = "baconR">Bacon</label>
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "mushroomsR" name = "mushrooms" value = "mushrooms">
+                        <label for = "mushroomsR">Mushrooms</label>
+                    </div>
+                </fieldset>
             </div>
             <fieldset>
-                <legend>Address:</legend>
-                <label for = "Address">Address</label>
+                <label for = "container">How will you get your pizza?</label>
+                <select name = "container" id = "container">
+                    <option value = "delivery">Delivery</option>
+                    <option value = "pickUp">Pick Up</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>If Delivery:</legend>
+                <label for = "Address">Please provide your address</label>
                 <textarea id = "Address" name = "Address" rows = "4" cols = "10"
                           placeholder = "ex. 123 ABC Street, Zipcode" style="width: 408px; height: 92px;"></textarea>
             </fieldset>
